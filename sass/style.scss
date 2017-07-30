@@ -5,26 +5,6 @@
 
 body {
   text-shadow: 0px 4px 4px rgba(0,0,0,.5);
-  ::-webkit-scrollbar {
-    width: 7px;
-    height: 7px;
-  }
-  ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background: rgba(211, 206, 170, 0.5);
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-  }
-  ::-webkit-scrollbar-corner {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background: rgba(211, 206, 170, 0.5);
-  }
-  ::-webkit-scrollbar-thumb {
-      -webkit-border-radius: 10px;
-      border-radius: 10px;
-      background: rgba(66, 66, 66, 0.7);
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
-  }
 }
 
 span {
@@ -32,10 +12,9 @@ span {
 }
 
 .map {
-  width: 96.5%;
-  height: 100%;
+  width: 80%;
+  height: 90%;
   overflow: scroll;
-  align-self: flex-start;
 }
 
 .page-wrap {
@@ -51,8 +30,8 @@ span {
 }
 
 #home-slider {
-  height: 90vh;
-  width: 95vw;
+  height: 100vh;
+  width: 100vw;
   position: relative;
 }
 
@@ -61,27 +40,43 @@ span {
   width: 100%;
 }
 
+.swiper-slide {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
 .swiper-image {
-  width: 50%;
-  height: 100%;
+  min-width: 100vw;
+  height: 50%;
 }
 
 .swiper-image-map, .swiper-image-title {
   width: 100%;
   height: 100%;
+  display: flex;
+}
+
+.swiper-image-map {
+  justify-content: center;
+  align-items: center;
 }
 
 .swiper-image-title {
-  background-image: url('./../images/1.jpg');
+  background-image: url('./../images/title.jpg');
   background-position: center;
   background-size: cover;
-  display: flex;
   justify-content: flex-start;
   flex-direction: column;
 }
 
 @for $i	from 1 through 28 {
-	.swiper-image-#{$i}	{	background-image:	url('./../images/#{$i}.jpg');	}
+  @if $i == 10 {
+    .swiper-image-#{$i}	{	background-image:	url('./../images/#{$i}.png');	}
+  }
+  @else {
+    .swiper-image-#{$i}	{	background-image:	url('./../images/#{$i}.jpg');	}
+  }
 }
 
 .swiper-image-inner {
@@ -124,11 +119,11 @@ span {
 }
 
 h1, h2 {
+  font-size: 2em;
+  align-self: center;
   font-family: 'Cormorant Garamond', serif;
   color: #fff;
-  align-self: flex-start;
   margin: 0 0 auto 0;
-  font-size: 4.5rem;
   line-height: 1;
   -webkit-transition: all .8s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
   transition: all .8s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
@@ -142,11 +137,11 @@ h1, h2 {
 }
 
 .paragraph {
+  width: 75%;
   font-family: 'Cormorant Garamond', serif;
   color: #fff;
-  width: 80%;
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 1em;
   font-weight: 500;
   opacity: 0;
   -webkit-transition: all .6s cubic-bezier(0.215, 0.61, 0.355, 1) 1s;
@@ -154,7 +149,7 @@ h1, h2 {
   -webkit-transform: translate3d(-20%, 0, 0);
   transform: translate3d(-20%, 0, 0);
   overflow: auto;
-  margin: 3em 0;
+  margin: 1em 0;
 }
 
 .swiper-slide.swiper-slide-active .swiper-image-right {
@@ -210,8 +205,8 @@ h1, h2 {
 }
 
 .swiper-pagination-bullets {
-  right: 1em;
-  bottom: 1em;
+  right: 0.5em;
+  bottom: 0.5em;
 }
 
 .swiper-pagination-bullet {
@@ -227,32 +222,63 @@ h1, h2 {
   background: #fff;
 }
 
-@media (max-width: 1280px) {
-  h1, h2 {
-    font-size: 4em;
+@media (min-width: 640px) {
+  body {
+    ::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      background: rgba(211, 206, 170, 0.5);
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-corner {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      background: rgba(211, 206, 170, 0.5);
+    }
+    ::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: rgba(66, 66, 66, 0.7);
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    }
   }
-  .paragraph {
-    font-size: 1em;
-    line-height: 1.3;
-  }
-}
 
-@media (max-width: 960px) {
-  h1, h2 {
-    font-size: 3.5em;
-  }
-}
-
-@media (max-width: 640px) {
   #home-slider{
-    height: 100vh;
-    width: 100vw;
+    height: 90vh;
+    width: 95vw;
   }
+
   h1, h2 {
-    font-size: 2em;
-    align-self: center;
+    font-size: 4.5rem;
+    align-self: flex-start;
   }
+
   .paragraph {
-    max-width: 94%;
+    width: 80%;
+    margin: 3em 0;
+    font-size: 1.4em;
+  }
+
+  .swiper-image {
+    width: 50%;
+    min-width: 50%;
+    height: 100%;
+  }
+
+  .swiper-pagination-bullets {
+    right: 1em;
+    bottom: 1em;
+  }
+
+  .map {
+    width: 96.5%;
+    height: 100%;
+  }
+
+  .swiper-image-map {
+    justify-content: flex-start;
   }
 }
