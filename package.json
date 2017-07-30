@@ -1,0 +1,16 @@
+{
+  "name": "Warszawa1915",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "author": "Aleksandra Kamińska",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-watch": "^4.3.11"
+  }
+}
