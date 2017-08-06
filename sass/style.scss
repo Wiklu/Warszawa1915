@@ -34,23 +34,30 @@
   width: 100%;
   height: 100vh;
   h1 {
-    color: white;
+    color: transparent;
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     line-height: 1;
     font-style: italic;
-    padding: 1em;
+    padding: 2em;
     font-size: 0.7em;
   }
 }
 
-.hit-the-floor {
-  color: #fff;
+.logo {
+  color: transparent;
   font-size: 2em;
   font-weight: bold;
-  font-family: Helvetica;
-  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  -webkit-text-stroke: 0.05em white;
+  -o-text-stroke: 0.05em white;
+  span {
+    -webkit-text-stroke: 0.05em red;
+    -o-text-stroke: 0.05em red;
+  }
 }
 
 .map {
@@ -60,8 +67,8 @@
 }
 
 .map > img {
-  width: 3736px;
-  height: 3548.5px;
+  width: 467px;
+  height: 443.5625px;
 }
 
 .plus, .minus {
@@ -189,30 +196,13 @@ h2 {
 }
 
 @media (min-width: 320px) and (orientation: landscape) {
-  .map {
-    width: 96.5%;
-    height: 100%;
-  }
-
-  .image-map {
-    justify-content: flex-start;
-  }
-
-  .map > img {
-    width: 3736px;
-    height: 3548.5px;
-  }
-
   .plus, .minus {
-    bottom: 3.5em;
-    right: 1em;
-    width: 1.5em;
-    height: 1.5em;
-    p {
-      font-size: 1.5em;
-    }
+    bottom: 2.5em;
+    right: 0.7em;
+    width: 1.2em;
+    height: 1.2em;
+    font-size: 1.2em;
   }
-
   .minus {
     bottom: 1em;
   }
@@ -248,7 +238,11 @@ h2 {
     font-size: 2em;
   }
   .image-title h1 {
-    font-size: 2em;
+    font-size: 2.2em;
+  }
+  .logo {
+    -webkit-text-stroke: 0.1em white;
+    -o-text-stroke: 0.1em white;
   }
   .map {
     width: 100%;
