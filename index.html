@@ -19,7 +19,7 @@
           </div>
           <div id="mapa">
             <div class="image-map">
-              <div class="map">
+              <div class="map dragscroll" style="overflow: scroll; cursor: grab; cursor : -o-grab; cursor : -moz-grab; cursor : -webkit-grab;">
                 <img src="images/punkty.jpg" name="obraz" usemap="#warsawmap">
                 <map name="warsawmap" id="warsawmap">
                   <area shape="circle" coords="2468.5, 1804.5, 22" href="#wisla" title='Wisła' alt='wisła' />
@@ -439,6 +439,7 @@
     </div>
   </div>
   <script src="js/jquery.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
   <script src="js/index.js"></script>
 </body>
 </html>

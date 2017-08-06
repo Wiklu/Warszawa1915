@@ -247,7 +247,7 @@ h2 {
   .hit-the-floor {
     font-size: 2em;
   }
-  h1 {
+  .image-title h1 {
     font-size: 2em;
   }
   .map {
@@ -277,11 +277,10 @@ h2 {
       left: 15vw;
       h2 {
         padding-top: 20vh;
+        font-size: 3em;
+
       }
     }
-  }
-  h2 {
-    font-size: 3em;
   }
   .info .text {
     font-size: 1.2em;
