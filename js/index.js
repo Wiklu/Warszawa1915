@@ -28,6 +28,3 @@ $('.minus').on('click', function() {
     $(this).attr('coords', newCoords);
   });
 });
-// $('#wisla_btn').on('click', function() {
-//   $('.map').scrollTop(1804.5).scrollLeft(2468.5);
-// });
