@@ -74,11 +74,8 @@
   height: 100vh;
   h1 {
     color: transparent;
-    font-weight: 900;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
-    line-height: 1;
-    font-style: italic;
     padding: 2em;
     font-size: 0.7em;
   }
@@ -87,16 +84,12 @@
 .logo {
   color: transparent;
   font-size: 2em;
-  font-weight: bold;
+  font-weight: 900;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -o-text-fill-color: transparent;
   -webkit-text-stroke: 0.05em white;
   -o-text-stroke: 0.05em white;
-  span {
-    -webkit-text-stroke: 0.05em red;
-    -o-text-stroke: 0.05em red;
-  }
 }
 
 .map {
