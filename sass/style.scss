@@ -4,6 +4,45 @@
   box-sizing: border-box;
 }
 
+@font-face {
+	font-family: 'Cormorant Garamond';
+	src: url('./../fonts/CormorantGaramond-BoldItalic.eot');
+	src: local('Cormorant Garamond Bold Italic'), local('CormorantGaramond-BoldItalic'),
+		url('./../fonts/CormorantGaramond-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('./../fonts/CormorantGaramond-BoldItalic.woff2') format('woff2'),
+		url('./../fonts/CormorantGaramond-BoldItalic.woff') format('woff'),
+		url('./../fonts/CormorantGaramond-BoldItalic.ttf') format('truetype'),
+		url('./../fonts/CormorantGaramond-BoldItalic.svg#CormorantGaramond-BoldItalic') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('./../fonts/Roboto-Black.eot');
+	src: local('Roboto Black'), local('Roboto-Black'),
+		url('./../fonts/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+		url('./../fonts/Roboto-Black.woff2') format('woff2'),
+		url('./../fonts/Roboto-Black.woff') format('woff'),
+		url('./../fonts/Roboto-Black.ttf') format('truetype'),
+		url('./../fonts/Roboto-Black.svg#Roboto-Black') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Cormorant Garamond';
+	src: url('./../fonts/CormorantGaramond-Medium.eot');
+	src: local('Cormorant Garamond Medium'), local('CormorantGaramond-Medium'),
+		url('./../fonts/CormorantGaramond-Medium.eot?#iefix') format('embedded-opentype'),
+		url('./../fonts/CormorantGaramond-Medium.woff2') format('woff2'),
+		url('./../fonts/CormorantGaramond-Medium.woff') format('woff'),
+		url('./../fonts/CormorantGaramond-Medium.ttf') format('truetype'),
+		url('./../fonts/CormorantGaramond-Medium.svg#CormorantGaramond-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
 .page-wrap {
   width: 100%;
   display: flex;
@@ -186,7 +225,7 @@ h2 {
   font-family: 'Cormorant Garamond', serif;
   color: #333;
   line-height: 1;
-  font-weight: 700;
+  font-weight: bold;
   font-style: italic;
   padding: 1em;
 }
