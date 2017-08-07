@@ -6,7 +6,7 @@ $('.plus').on('click', function() {
   map.width(newWidth);
   map.height(newHeight);
   $('area').each(function() {
-    var coords = $(this).attr('coords').split(', ');
+    var coords = $(this).attr('coords').split(',');
     coords[0] *= 1.1;
     coords[1] *= 1.1;
     coords[2] *= 1.1;
@@ -20,7 +20,7 @@ $('.minus').on('click', function() {
   map.width(newWidth);
   map.height(newHeight);
   $('area').each(function() {
-    var coords = $(this).attr('coords').split(', ');
+    var coords = $(this).attr('coords').split(',');
     coords[0] /= 1.1;
     coords[1] /= 1.1;
     coords[2] /= 1.1;
