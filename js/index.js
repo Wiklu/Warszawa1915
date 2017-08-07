@@ -7,9 +7,9 @@ $('.plus').on('click', function() {
   map.height(newHeight);
   $('area').each(function() {
     var coords = $(this).attr('coords').split(',');
-    coords[0] *= 1.1;
-    coords[1] *= 1.1;
-    coords[2] *= 1.1;
+    coords[0] = Math.ceil(coords[0] * 1.1);
+    coords[1] = Math.ceil(coords[1] * 1.1);
+    coords[2] = Math.ceil(coords[2] * 1.1);
     var newCoords = coords.join(', ');
     $(this).attr('coords', newCoords);
   });
@@ -21,9 +21,9 @@ $('.minus').on('click', function() {
   map.height(newHeight);
   $('area').each(function() {
     var coords = $(this).attr('coords').split(',');
-    coords[0] /= 1.1;
-    coords[1] /= 1.1;
-    coords[2] /= 1.1;
+    coords[0] = Math.ceil(coords[0] / 1.1);
+    coords[1] = Math.ceil(coords[1] / 1.1);
+    coords[2] = Math.ceil(coords[2] / 1.1);
     var newCoords = coords.join(', ');
     $(this).attr('coords', newCoords);
   });
