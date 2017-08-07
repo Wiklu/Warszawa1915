@@ -1,5 +1,8 @@
+$('map').imageMapResize();
+
 $('.map').scrollTop(1200).scrollLeft(1100);
 var map = $('.map').find('img');
+
 $('.plus').on('click', function() {
   var newWidth = map.width() * 1.1;
   var newHeight = map.height() * 1.1;
@@ -14,6 +17,7 @@ $('.plus').on('click', function() {
     $(this).attr('coords', newCoords);
   });
 });
+
 $('.minus').on('click', function() {
   var newWidth = map.width() / 1.1;
   var newHeight = map.height() / 1.1;
