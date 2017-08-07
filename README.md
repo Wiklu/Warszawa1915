@@ -16,4 +16,4 @@
 
 ### Run gulp
 
- `gulp`
+ `gulp watch`
