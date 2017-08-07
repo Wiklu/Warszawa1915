@@ -66,6 +66,14 @@
   overflow: scroll;
 }
 
+.dragscroll {
+  overflow: scroll;
+  cursor: grab;
+  cursor: -o-grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
 .map > img {
   width: 467px;
   height: 443.5625px;
