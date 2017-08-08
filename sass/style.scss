@@ -75,7 +75,7 @@ header {
   background-size: cover;
   justify-content: flex-start;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   h1 {
     color: transparent;
     font-family: 'Roboto', sans-serif;
@@ -111,8 +111,8 @@ header {
 }
 
 .map > img {
-  width: 3736px;
-  height: 3548.5px;
+  width: 1868px;
+  height: 1774.25px;
 }
 
 .plus, .minus {
@@ -157,7 +157,7 @@ header {
 
 .image-big {
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   position: relative;
   .name {
     background: rgba(255, 255, 255, 0.5);
@@ -175,7 +175,7 @@ header {
 
 .info {
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -186,7 +186,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 50%;
-    height: 50vh;
+    height: 50%;
     background-color: #333;
     font-size: 0.7em;
   }
@@ -198,21 +198,21 @@ header {
     position: absolute;
     bottom: 0;
     left: 25%;
-    width: 30%;
-    height: 43vh;
+    width: 35%;
+    height: 43%;
     background: #555;
     z-index: 1;
   }
   .image-medium {
     width: 50%;
-    height: 90vh;
+    height: 90%;
   }
   .image-small {
     position: absolute;
     left: 0;
-    bottom: 5vh;
+    bottom: 0;
     width: 30%;
-    height: 50vh;
+    height: 50%;
   }
 }
 
@@ -278,8 +278,11 @@ h2 {
         box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
     }
   }
-  header h1 {
-    font-size: 2.2em;
+  header {
+    height: 100vh;
+    h1 {
+      font-size: 2.2em;
+    }
   }
   .logo {
     -webkit-text-stroke: 0.1em white;
@@ -304,17 +307,24 @@ h2 {
     bottom: 1.5em;
   }
   .image-big {
+    height: 100vh;
     .name {
       width: 30%;
       left: 15vw;
       h2 {
         padding-top: 20vh;
         font-size: 3em;
-
       }
     }
   }
-  .info .text {
-    font-size: 1.2em;
+  .info {
+    height: 100vh;
+    .text {
+      font-size: 1.2em;
+    }
+    .image-small {
+      bottom: 5vh;
+    }
   }
+
 }
