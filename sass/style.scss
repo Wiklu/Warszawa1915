@@ -74,6 +74,7 @@ header {
   background-position: center;
   background-size: cover;
   justify-content: flex-start;
+  background-attachment: fixed;
   width: 100%;
   height: 50vh;
   h1 {
@@ -156,9 +157,10 @@ header {
 }
 
 .image-big {
+  position: relative;
   width: 100%;
   height: 50vh;
-  position: relative;
+  background-attachment: fixed;
   .name {
     background: rgba(255, 255, 255, 0.5);
     height: 100%;
@@ -185,7 +187,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 60%;
     height: 50%;
     background-color: #333;
     font-size: 0.7em;
@@ -198,7 +200,7 @@ header {
     position: absolute;
     bottom: 0;
     left: 25%;
-    width: 35%;
+    width: 40%;
     height: 43%;
     background: #555;
     z-index: 1;
